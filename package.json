@@ -11,5 +11,12 @@
   },
   "scripts": {
     "start": "node app.js"
-  }
+  },
+  "name": "flower-web-app",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

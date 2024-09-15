@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: flower-order-deployment
+  namespace: prod-ns
+spec: 
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      containers: 
+        - image: anusocial123/flower-app-image:v1
+          name: flower-container
+          ports: 
+            - containerport: 3015
+          resources:
+            requests:
+              memory: "250Mi"
+              cpu: "150m"
+            limits:
+              memory: "500Mi"
+              cpu: "250m"
+    replicas:
+    selector:
+      matchLabels:
+        app: web
+
