@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: flower-deployment
-  namespace: production-ns
+  namespace: test-ns
 spec:
   replicas: 3 
   selector:
@@ -25,4 +25,3 @@ spec:
             limits:
               memory: "500Mi"
               cpu: "250m"
-
