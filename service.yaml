@@ -9,7 +9,7 @@ spec:
   ports:
     - port: 4000
       targetPort: 3015
-      protocol: TcP
+      protocol: TCP
   type: LoadBalancer     
 
        
